@@ -9,7 +9,8 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Livro {
 
-	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Id 
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	private String titulo;
 	

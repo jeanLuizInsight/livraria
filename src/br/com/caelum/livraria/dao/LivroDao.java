@@ -19,7 +19,8 @@ public class LivroDao {
 	}
 	
 	public List<Livro> todosLivros() {
-		return em.createNamedQuery("select l from Livro l", Livro.class).getResultList();
+		return (List<Livro>) em.createNamedQuery("select l from Livro l", Livro.class)
+				.getResultList();
 	}
 	
 }
